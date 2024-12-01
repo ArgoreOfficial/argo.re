@@ -1,0 +1,81 @@
+/*
+ * Fonts
+ */
+@font-face {
+	font-family: 'Web IBM CGAthin-2y';
+	font-style: normal;
+	font-weight: 400;
+	src: url("../font/web_ibm_cgathin-2y.woff") format('woff');
+}
+
+/*
+ * Styles
+ */
+
+* {
+	margin: 0;
+	--content-width: 1001px;
+}
+
+body {
+	background-color: #C1C1C1;
+	vertical-align: top;
+	
+	font-family: 'Web IBM CGAthin-2y';
+	text-align: center;
+	font-size: 16px;
+	line-height: 20px;
+	
+	image-rendering: pixelated;
+}
+
+div {
+	margin: 12px auto;
+	padding: 10px;
+	box-sizing: border-box;
+	font-smooth: never;
+}
+
+h1 {
+	font-size: 32px;
+	text-shadow: 2px 2px 0 #555;
+	font-weight: 400;
+	text-indent: 11px;
+	margin-block-start: 20px;
+    margin-block-end: 20px;
+}
+
+strong, b {
+	font-weight: 400;
+	text-shadow: 
+		1px 0px 0 black,
+		0px 1px 0 black;
+}
+
+.nopad {
+	text-align: left;
+}
+
+.win {
+	background-color: #C1C1C1;
+	width: var(--content-width);
+	padding: 10px 40px;
+}
+
+.outset {
+	box-shadow: 
+		inset -1px -1px #606060, /* bottom right       */
+		inset  1px  1px #ECECEC, /* top left           */
+		inset -2px -2px #919191, /* inset bottom right */
+		inset  2px  2px #ECECEC; /* inset top left     */
+}
+
+.inset {
+	box-shadow: 
+		inset -1px -1px #ECECEC, /* bottom right   */
+		inset  1px  1px #919191, /* top left       */
+		inset -2px -2px #C1C1C1, /* bottom right 2 */
+		inset  2px  2px #606060, /* top left     2 */
+		inset -3px -3px #2F2F2F, /* bottom right 3 */
+		inset  3px  3px #2F2F2F; /* top left     3 */
+}
