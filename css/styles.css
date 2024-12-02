@@ -12,6 +12,31 @@
  * Styles
  */
 
+ /* width */
+::-webkit-scrollbar {
+	width: 18px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #999999;
+	width: 16px;
+
+	box-shadow:  
+	           0px  1px black,   /* bottom           */
+	           0px -1px black,   /* bottom           */
+		inset -1px -1px #737373, /* bottom right       */
+		inset  1px  1px #E1E1E1, /* top left           */
+		inset -2px -2px #737373, /* inset bottom right */
+		inset  2px  2px #CCCCCC; /* inset top left     */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #999999;
+	box-shadow: inset  1px  1px lime,
+	            inset -1px -1px red;
+}
+
 * {
 	margin: 0;
 	--content-width: 1001px;
@@ -27,6 +52,8 @@ body {
 	line-height: 20px;
 	
 	image-rendering: pixelated;
+
+	height: 2000px;
 }
 
 div {
